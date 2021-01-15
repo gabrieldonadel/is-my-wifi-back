@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['react-perf', '@coorpacademy/coorpacademy'],
+  plugins: ['react-perf'],
   extends: ['@react-native-community', 'plugin:react-perf/recommended'],
   rules: {
     semi: 0,
@@ -8,6 +8,5 @@ module.exports = {
     'react-perf/jsx-no-new-array-as-prop': 0,
     'react-perf/jsx-no-new-function-as-prop': 0,
     'react-perf/jsx-no-jsx-as-prop': 1,
-    '@coorpacademy/coorpacademy/jsx-no-logical-expression': 'error',
   },
-};
+}

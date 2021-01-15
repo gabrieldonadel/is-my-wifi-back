@@ -8,16 +8,14 @@
     "lib": ["es6"],
     "moduleResolution": "node",
     "noEmit": true,
-    "strict": true,
+    "strict": false,
     "target": "esnext",
     "baseUrl": ".",
+    "paths": {
+      "_/*": ["src/*"]
+    },
     "skipLibCheck": true,
     "types": []
   },
-  "exclude": [
-    "node_modules",
-    "babel.config.js",
-    "metro.config.js",
-    "jest.config.js"
-  ]
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
 }
