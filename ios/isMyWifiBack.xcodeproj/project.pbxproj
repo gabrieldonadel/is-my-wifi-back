@@ -63,6 +63,7 @@
 		9EE3557FB6FF74795861E05F /* libPods-isMyWifiBack-isMyWifiBackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-isMyWifiBack-isMyWifiBackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F87F0CEFBF80263122E4A8 /* Pods-isMyWifiBack-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMyWifiBack-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-isMyWifiBack-tvOSTests/Pods-isMyWifiBack-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A7A668901307AE666BA491 /* Pods-isMyWifiBack-isMyWifiBackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMyWifiBack-isMyWifiBackTests.debug.xcconfig"; path = "Target Support Files/Pods-isMyWifiBack-isMyWifiBackTests/Pods-isMyWifiBack-isMyWifiBackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0E4201D25B5254C0005A815 /* isMyWifiBack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = isMyWifiBack.entitlements; path = isMyWifiBack/isMyWifiBack.entitlements; sourceTree = "<group>"; };
 		C5D6FCBFDA40A04C317857F0 /* libPods-isMyWifiBack-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-isMyWifiBack-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E500559A7C5628C258B27B97 /* libPods-isMyWifiBack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-isMyWifiBack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -134,13 +135,13 @@
 				B3F87F0CEFBF80263122E4A8 /* Pods-isMyWifiBack-tvOSTests.debug.xcconfig */,
 				2C271BF9DAC4636DCB4BB6AC /* Pods-isMyWifiBack-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* isMyWifiBack */ = {
 			isa = PBXGroup;
 			children = (
+				C0E4201D25B5254C0005A815 /* isMyWifiBack.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -655,6 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = isMyWifiBack/isMyWifiBack.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = isMyWifiBack/Info.plist;
@@ -678,6 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = isMyWifiBack/isMyWifiBack.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = isMyWifiBack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

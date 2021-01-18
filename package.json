@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@react-native-community/netinfo": "^5.9.10",
+    "@react-native-community/push-notification-ios": "^1.8.0",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-push-notification": "^7.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
